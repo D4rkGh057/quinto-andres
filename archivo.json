@@ -1,0 +1,11 @@
+{
+   "nombre":"Andres",
+   "apellido":"Rojas",
+   "edad":40,
+   "educacion":[
+      {
+         "primaria":"Aurelio",
+         "secundaria":"Gonzalo"
+      }
+   ]
+}
