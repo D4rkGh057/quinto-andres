@@ -1,7 +1,7 @@
 <?php
     class Conexion{
         public function conectar(){
-            define("host","localhost:3308");
+            define("host","localhost");
             define("usuario","root");
             define("contrasena","");
             define("database", "quinto");
