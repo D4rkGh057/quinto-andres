@@ -1,18 +1,18 @@
 <?php
-header("Access-Control-Allow-Origin: http://localhost:19006");
 include_once("conexion.php");
+header("Access-Control-Allow-Origin: http://localhost:19006/");
 
-class crud
+
+class crudSBID
 {
-    public static function obtenerEstudiantes()
+    public static function buscarporid($id)
     {
         $objeto = new conexion();
         $conectar = $objeto->conectar();
-        $select = "select * from estudiante ORDER BY cedula ASC";
+        $select = "SELECT * FROM estudiante WHERE cedula = '$id'";
         $resultado = $conectar->prepare($select);
         $resultado->execute();
         $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
         echo json_encode($data);
     }
 }
-?>
