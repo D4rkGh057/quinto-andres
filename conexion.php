@@ -3,13 +3,12 @@ class Conexion
 {
     public function conectar()
     {
-        define("host", "dn1pat.stackhero-network.com:3306");
-        define("usuario", "root");
-        define("contrasena", "5YUgOARflPnvYROYT9YnidwsSuDiNqRp");
-        define("database", "pruebas");
+        define("host", "bk0ltogcgrujllh6nir2-mysql.services.clever-cloud.com");
+        define("usuario", "ukx4hjdpu7yzrz3i");
+        define("contrasena", "0WKEhutHRTZcJ1eZXUdI");
+        define("database", "bk0ltogcgrujllh6nir2");
         $opc = array(
             PDO::MYSQL_ATTR_INIT_COMMAND > 'SET NAMES utf8',
-            PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => false
         );
         try {
             $conexion = new PDO("mysql:host=" . host . ";dbname=" . database, usuario, contrasena, $opc);
