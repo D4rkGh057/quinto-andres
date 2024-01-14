@@ -3,10 +3,10 @@ class Conexion
 {
     public function conectar()
     {
-        define("host", "localhost");
+        define("host", "dn1pat.stackhero-network.com:3306");
         define("usuario", "root");
-        define("contrasena", "");
-        define("database", "quinto");
+        define("contrasena", "5YUgOARflPnvYROYT9YnidwsSuDiNqRp");
+        define("database", "pruebas");
         $opc = array(PDO::MYSQL_ATTR_INIT_COMMAND > 'SET NAMES utf8');
         try {
             $conexion = new PDO("mysql:host=" . host . ";dbname=" . database, usuario, contrasena, $opc);
